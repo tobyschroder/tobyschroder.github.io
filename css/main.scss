@@ -4,11 +4,19 @@
 @import 'base';
 
 html {
-  background: url(/images/mountain-man-bw.png) no-repeat center center fixed; 
+  background: url(/images/mountain-man-bw-sm.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  @media (min-width: 1024px) {
+    background: url(/images/mountain-man-bw.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 body {
@@ -20,25 +28,57 @@ body {
 }
 
 .identification {
-  float: left;
+  @media (min-width: 600px) {
+    float: left;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    display: inline-block;
+  }
 }
 
 .name {
-  display: inline-block;
-  padding: 0 0 0 0.5rem;
-  position: relative;
-  top: -0.5rem;
+  display: block;
   font-size: 1.25rem;
+  text-align: center;
+  position: relative;
+  top: 1rem;
+
+  @media (min-width: 600px) {
+    display: inline-block;
+    padding: 0 0 0 0.5rem;
+    top: -0.5rem;
+    text-align: left;
+  }
 }
 
 nav {
-  float: right;
+  text-align: center;
   position: relative;
-  top: 0.5rem;
+  top: 2rem;
+
+  @media (min-width: 600px) {
+    float: right;
+    top: 0.5rem;
+    text-align: right;
+  }
 }
 
 a {
   color: white;
   text-decoration: none;
-  margin-left: 1rem;
+  margin: 0 0.5rem;
+  
+  @media (min-width: 300px) {
+    margin: 0 0.25rem;  
+  }
+
+  @media (min-width: 600px) {
+    margin-left: 1rem;
+  }
 }
