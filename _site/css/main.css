@@ -74,7 +74,10 @@ nav {
 a {
   color: #151515;
   text-decoration: none;
-  margin: 0 0.5rem; }
+  margin: 0 0.5rem;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s; }
   a:hover {
     color: #50E3C2; }
   @media (min-width: 300px) {
