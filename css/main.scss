@@ -74,6 +74,10 @@ a {
   text-decoration: none;
   margin: 0 0.5rem;
   
+  &:hover {
+    color: #50E3C2;
+  }
+
   @media (min-width: 300px) {
     margin: 0 0.25rem;  
   }
