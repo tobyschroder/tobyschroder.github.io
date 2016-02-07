@@ -70,7 +70,7 @@ nav {
 }
 
 a {
-  color: white;
+  color: #151515;
   text-decoration: none;
   margin: 0 0.5rem;
   
@@ -80,5 +80,6 @@ a {
 
   @media (min-width: 600px) {
     margin-left: 1rem;
+    color: #ffffff;
   }
 }
